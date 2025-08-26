@@ -25,7 +25,7 @@ export default function TransformingBussiness() {
           Transforming businesses with expertise
         </h2>
         <div className=" py-10 flex ">
-          <div className="flex flex-col md:flex-row gap-[10px] md:gap-6  w-full px-4">
+          <div className="flex flex-col md:flex-row gap-[10px] md:gap-6  w-full ">
             {stats.map((item, index) => (
               <div
                 key={index}

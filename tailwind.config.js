@@ -7,7 +7,7 @@ export default {
         pragati: ["Pragati Narrow"],
       },
       screens: {
-        xxl: "1440px", // ✅ ab ye extend ho gaya default screens ke sath
+        xxl: "1440px",
       },
     },
   },

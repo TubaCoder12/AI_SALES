@@ -42,3 +42,13 @@ html {
 .animate-scroll {
   animation: scroll 20s linear infinite;
 }
+
+.gradient-border {
+  border: 2px solid transparent;
+  border-radius: 24px; /* match with rounded-[24px] */
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(180deg, #fe6037 0%, #77c6b3 49.04%, #3861fa 93.27%)
+      border-box;
+}
+
+/* swiper */

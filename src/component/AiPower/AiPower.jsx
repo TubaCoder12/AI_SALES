@@ -61,7 +61,7 @@ const AiPower = () => {
             <img src={vs} alt="VS" className="" />
           </div>
 
-          <div className="flex-1 bg-[#FFFFFF]  flex flex-col justify-between rounded-[24px]">
+          <div className="flex-1 bg-[#FFFFFF]  gradient-border flex flex-col justify-between rounded-[24px]n ">
             <div className=" p-[30px] ">
               <div className="flex flex-row gap-3">
                 <img src={logo} alt="" className="w-[33.84px] h-[36px]" />

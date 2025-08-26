@@ -6,6 +6,10 @@ import HowItWorks from "../HowItWork/HowItWorks";
 import AiPower from "../AiPower/AiPower";
 import ReviewProduct from "../ReviewProduct/ReviewProduct";
 import TransformingBussiness from "../TransformingBussiness/TransformingBussiness";
+import IndustrySection from "../IndustrySection/IndustrySection";
+import CaseStudies from "../CaseStudy/CaseStudy";
+import CTASection from "../CTASection/CTASection";
+import TestimonialsSlider from "../Testimonail/Testimonail";
 
 const Home = () => {
   return (
@@ -17,6 +21,10 @@ const Home = () => {
       <HowItWorks />
       <ReviewProduct />
       <TransformingBussiness />
+      <IndustrySection />
+      <CaseStudies />
+      {/* <TestimonialsSlider /> */}
+      <CTASection />
     </>
   );
 };
