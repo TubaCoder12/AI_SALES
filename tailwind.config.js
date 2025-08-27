@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         pragati: ["Pragati Narrow"],
+        inter: ["Inter"],
       },
       screens: {
         xxl: "1440px",

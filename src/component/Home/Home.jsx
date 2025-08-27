@@ -23,7 +23,7 @@ const Home = () => {
       <TransformingBussiness />
       <IndustrySection />
       <CaseStudies />
-      {/* <TestimonialsSlider /> */}
+      <TestimonialsSlider />
       <CTASection />
     </>
   );
