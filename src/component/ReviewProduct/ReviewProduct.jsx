@@ -5,33 +5,35 @@ import circle from "../../assets/Icons/Circle.svg"; // circular text wala svg
 
 const ReviewProduct = () => {
   return (
-    <div className="flex flex-col items-center text-center gap-4 py-[80px] px-[120px] bg-[#FEFAF6]">
-      {/* Label */}
-      <CardContent label="PREVIEW THE PRODUCT" align="center" />
+    <div className="lg:max-w-[1440px] w-full mx-auto">
+      <div className="flex flex-col items-center text-center gap-4 lg:py-[80px] lg:px-[120px]  md:py-[40px] md:px-[80px] py-[40px] px-[20px]  bg-[#FEFAF6]">
+        {/* Label */}
+        <CardContent label="PREVIEW THE PRODUCT" align="center" />
 
-      {/* Title */}
-      <h2 className="text-3xl md:text-[40px] font-medium text-black max-w-xl text-center leading-[52.8px] tracking-[0px]">
-        A modern interface built for outreach management
-      </h2>
+        {/* Title */}
+        <h2 className="text-[30px] md:text-[40px] font-medium text-black md:max-w-xl max-w-[296px] text-center leading-[120%] tracking-[0px]">
+          A modern interface built for outreach management
+        </h2>
 
-      {/* Video Preview Section */}
-      <div className="relative rounded-[30px] overflow-hidden  aspect-video w-full max-w-[1200px] mt-[60px] border-[16px] border-[#FAEBDC] shadow-[0px_4px_100px_0px_rgba(254,96,55,0.24)] ">
-        {/* Thumbnail image instead of video */}
-        <img
-          src={sampleVideo}
-          alt="Product Preview"
-          className="w-full h-full object-cover"
-        />
+        {/* Video Preview Section */}
+        <div className="relative rounded-[30px] overflow-hidden  aspect-video w-full max-w-[1200px] mt-[60px] border-[16px] border-[#FAEBDC] shadow-[0px_4px_100px_0px_rgba(254,96,55,0.24)] ">
+          {/* Thumbnail image instead of video */}
+          <img
+            src={sampleVideo}
+            alt="Product Preview"
+            className="w-full h-full object-cover"
+          />
 
-        {/* Circle Button */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="relative w-40 h-40 flex items-center justify-center top-[201px] left-[431px] xxl:top-[245px] xxl:left-[514px]">
-            {/* Rotating Circular Text Image */}
-            <img
-              src={circle}
-              alt="Circular Text"
-              className="w-full h-full animate-spin-slow"
-            />
+          {/* Circle Button */}
+          <div className="absolute inset-0 flex items-end justify-end">
+            <div className="relative lg:w-40 lg:h-40 md:w-28 md:h-28 w-20 h-20 flex items-center justify-end ">
+              {/* Rotating Circular Text Image */}
+              <img
+                src={circle}
+                alt="Circular Text"
+                className="w-full h-full animate-spin-slow"
+              />
+            </div>
           </div>
         </div>
       </div>

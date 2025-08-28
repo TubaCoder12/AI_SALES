@@ -1,54 +1,49 @@
 import React from "react";
 import CardContent from "../CardContent/CardContent";
 
-const industries = [
-  { name: "Nonprofit", color: "bg-pink-200" },
-  { name: "Consulting Firm", color: "bg-orange-200" },
-  { name: "Corporate", color: "bg-blue-600 text-white" },
-  { name: "Small Business", color: "bg-green-200" },
-  { name: "E-commerce Store", color: "bg-blue-200" },
-  { name: "Startup", color: "bg-blue-600 text-white" },
-  { name: "Tech Company", color: "bg-yellow-200" },
-  { name: "Marketing Agency", color: "bg-red-400 text-white" },
-];
-
 export default function IndustrySection() {
   return (
-    <div className="flex flex-col items-center justify-center  bg-white py-[80px] px-[120px] ">
-      <div className="bg-orange-100 rounded-3xl    mx-auto   text-center">
-        <div className="py-[80px] px-[220px]">
-          <CardContent label="INDUSTRIES WE SERVE" align="center" />
+    <div className="lg:max-w-[1440px] w-full mx-auto">
+      <div className="flex flex-col items-center justify-center bg-white lg:py-[80px] lg:px-[120px] md:py-[40px] md:px-[60px] py-[40px] px-[20px]">
+        <div className="bg-orange-100 rounded-3xl text-center w-full">
+          {/* Heading */}
+          <div className="py-[40px] lg:py-[80px] px-[20px] lg:px-[120px]">
+            <CardContent label="INDUSTRIES WE SERVE" align="center" />
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-[500] text-[#242424] mt-4 leading-[120%] tracking-[-0.5px] max-w-4xl mx-auto">
+              Industry-specific expertise to drive your success
+            </h2>
+          </div>
+          <div>
+            <div className="flex justify-center gap-[1vw] md:gap-4">
+              <span className="bg-[#FFBAB9] text-white px-[2vw] py-[0.8vw] md:px-6 md:py-3 rounded-full text-[2vw] md:text-base font-medium lg:px-[14px] whitespace-nowrap">
+                Nonprofit
+              </span>
+              <span className="bg-[#FFD37D] text-white px-[2vw] py-[0.8vw] md:px-6 md:py-3 rounded-full text-[2vw] md:text-base font-medium lg:px-[14px] whitespace-nowrap ml-20 mr-16">
+                Tech Company
+              </span>
+            </div>
+            <div className="font-satoshi flex justify-center">
+              <span className="bg-[#FFA37C] text-white px-[1.3vw] py-[1vw] lg:px-[14px] md:py-3 xxl:!px-[40px] rounded-full text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap ml-2">
+                Consulting Firm
+              </span>
 
-          <h2 className="text-[44px] text-center font-[500] mx-auto text-[#242424] mt-4 leading-[120%]  tarcking-[-0.5px] max-w-4xl">
-            Industry-specific expertise to drive your success
-          </h2>
-        </div>
-
-        <div className="flex  items-end   px-[30px]  mt-6 relative  text-[16.88px] leading-[28px] text-white ">
-          <span className="absolute left-[6rem] xxl:-top-[76px] -top-[60px] py-[15px] px-[28px] xxl:py-[23.01px] xxl:px-[40.01px] rounded-full bg-[#FFBAB9] font-medium shadow">
-            Nonprofit
-          </span>
-          <span className="  rounded-full bg-[#FFA37C] text-white font-medium py-[15px] px-[28px] xxl:py-[23.01px] xxl:px-[40.01px] ">
-            Consulting Firm
-          </span>
-          <span className="xx:py-[23.01px] xxl:px-[40.01px] py-[15px] px-[28px] rounded-full bg-[#3758D3] text-white font-medium shadow">
-            Corporate
-          </span>
-          <span className="xxl:py-[23.01px] xxl:px-[40.01px] py-[15px] px-[28px] rounded-full bg-[#76C6B3] font-medium shadow">
-            Small Business
-          </span>
-          <span className=" xxl:py-[23.01px] xxl:px-[40.01px]  py-[15px] px-[28px] rounded-full bg-[#70A2E1] font-medium shadow">
-            E-commerce Store
-          </span>
-          <span className="xxl:py-[23.01px] xxl:px-[40.01px]  py-[15px] px-[28px] rounded-full bg-[#3861F9] text-white font-medium shadow">
-            Startup
-          </span>
-          <span className="absolute right-[288px] xxl:-top-[76px]  -top-[60px] py-[15px] px-[28px] xxl:py-[23.01px]  xxl:px-[40.01px] rounded-full bg-[#FFD37D] font-medium shadow text-black">
-            Tech Company
-          </span>
-          <span className="absolute right-[32px] bottom-[28px] rotate-[19.84deg]  py-[15px] px-[28px] xxl:py-[23.01px]  xxl:px-[47px] rounded-full bg-[#FE6037] text-white font-medium shadow">
-            Marketing Agency
-          </span>
+              <span className="bg-[#3758D3] text-white px-[1.3vw] py-[1vw] lg:px-[14px] md:py-3 rounded-full xxl:!px-[40px]  text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap">
+                Corporate
+              </span>
+              <span className="bg-[#76C6B3] text-white px-[1.3vw] py-[1vw] lg:px-[14px] md:py-3 rounded-full xxl:!px-[40px]  text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap">
+                Small Business
+              </span>
+              <span className="bg-[#70A2E1] text-white px-[1.3vw] py-[1vw] lg:px-[14px] md:py-3 xxl:!px-[40px]  rounded-full text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap">
+                E-commerce Store
+              </span>
+              <span className="bg-[#3861F9] text-white px-[1.3vw] py-[1vw] lg:px-[14px] md:py-3 xxl:!px-[40px]   rounded-full text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap">
+                Startup
+              </span>
+              <span className="bg-[#FE6037] text-white px-[1.3vw] py-[1vw] lg:px-[14px] md:py-3 xxl:!px-[40px]  rounded-full text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap rotate-[21deg] relative -top-[3vw] -left-[2.5vw] lg:-top-6 md:-left-7 lg:-left-[12px] xxl:-top-[2.25rem]">
+                Marketing Agency
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
