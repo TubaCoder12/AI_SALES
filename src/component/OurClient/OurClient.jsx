@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+
 import logo1 from "../../assets/Icons/Logoispm1.svg";
 import logo2 from "../../assets/Icons/Logoispm2.svg";
 import companyLogo from "../../assets/Icons/Company.svg";
@@ -6,7 +8,38 @@ import startup from "../../assets/Icons/Startup.svg";
 import divider from "../../assets/Icons/Divider.svg";
 
 const OurClient = () => {
+  const titleRef = useRef(null);
+  const taglineRef = useRef(null);
+
   const logos = [logo1, logo2, companyLogo, startup];
+
+  useEffect(() => {
+    // Title animation
+    gsap.fromTo(
+      titleRef.current,
+      { opacity: 0, y: 50, scale: 0.95 },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 1,
+        ease: "power3.out",
+      }
+    );
+
+    // Tagline animation (after title)
+    gsap.fromTo(
+      taglineRef.current,
+      { opacity: 0, y: 40 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        delay: 0.6,
+      }
+    );
+  }, []);
 
   return (
     <div className="lg:max-w-[1440px] w-full mx-auto">
@@ -17,7 +50,11 @@ const OurClient = () => {
             Our client’s
           </span>
 
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[40px] font-medium text-white max-w-[224px]  md:max-w-[432px] lg:max-w-xl text-center leading-snug md:leading-[52.8px]">
+          {/* Title */}
+          <h2
+            ref={titleRef}
+            className="text-3xl lg:text-[40px] font-medium text-white max-w-[318px] md:max-w-[432px] lg:max-w-xl text-center leading-snug md:leading-[52.8px]"
+          >
             Trusted by high-growth startups across industries
           </h2>
         </div>
@@ -33,13 +70,13 @@ const OurClient = () => {
                 <img
                   src={logo}
                   alt={`logo-${i}`}
-                  className="h-[24px] sm:h-[32px] md:h-[38px] w-auto object-contain grayscale"
+                  className="h-[38px] w-auto object-contain grayscale"
                 />
                 {i !== arr.length - 1 && (
                   <img
                     src={divider}
                     alt="divider"
-                    className="h-4 sm:h-5 md:h-6 mx-2 object-contain flex-shrink-0"
+                    className="h-8 mx-2 object-contain flex-shrink-0"
                   />
                 )}
               </div>

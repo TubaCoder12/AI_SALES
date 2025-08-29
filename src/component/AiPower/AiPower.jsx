@@ -18,6 +18,15 @@ const AiPower = () => {
     "Burnout and fatigue.",
     "Generic messaging.",
   ];
+  const features = [
+    "Automated lead discovery.",
+    "AI-written, human-sounding emails.",
+    "Smart, timed follow-ups.",
+    "Calendar syncing and auto-scheduling.",
+    "Scales with you.",
+    "More time for high-impact work.",
+    "Dynamic personalization.",
+  ];
 
   return (
     <div className="lg:max-w-[1440px] w-full mx-auto">
@@ -107,7 +116,7 @@ const AiPower = () => {
                   compliant, and focus on what matters.
                 </p>
                 <ul className="flex flex-col gap-4 text-lg text-[#595959] leading-[130%] tracking-normal font-[500]">
-                  {points.map((point, index) => (
+                  {features.map((point, index) => (
                     <li key={index} className="flex items-start gap-4">
                       <img src={AiSitesvg} alt="" />
                       <span className="text-left">{point}</span>

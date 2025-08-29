@@ -10,10 +10,10 @@ export default function CaseStudies() {
         <div className="flex flex-col lg:flex-row lg:items-end md:justify-between gap-6">
           <div>
             <CardContent label="Case study" align="start" />
-            <h2 className="text-[28px] sm:text-[36px] lg:text-[44px] text-left font-[500] text-[#242424] mt-4 leading-[120%] tracking-[-0.5px] max-w-2xl">
+            <h2 className="text-[32px] sm:text-[36px] lg:text-[44px] text-left font-[500] text-[#242424] mt-4 leading-[120%] tracking-[-0.5px] max-w-[295px] md:max-w-2xl">
               Client success stories through our solutions
             </h2>
-            <p className="text-[14px] sm:text-[16px] font-normal mt-3 leading-[130%] max-w-3xl ">
+            <p className="text-[16px] font-normal mt-3 leading-[130%] max-w-3xl ">
               Cold outreach is time-consuming and hard to scale. Writing emails,
               remembering follow-ups, and scheduling calls eats up your day.
             </p>
@@ -41,7 +41,7 @@ export default function CaseStudies() {
             {/* Content outside */}
             <div className="py-4">
               <CardContent label="Healthcare" align="start" />
-              <h3 className="mt-4 text-[20px] sm:text-[24px] md:text-[28px] lg:text-[30px] font-[500] text-[#242424] leading-[130%] tracking-normal">
+              <h3 className="mt-4 text-[30px] md:text-[28px] lg:text-[30px] font-[500] text-[#242424] leading-[130%] tracking-normal">
                 Making an Impact: Transforming a Healthcare Platform’s Rebuild
               </h3>
             </div>
@@ -62,7 +62,7 @@ export default function CaseStudies() {
             {/* Content outside */}
             <div className="py-4">
               <CardContent label="Startup" align="start" />
-              <h3 className="mt-4 text-[20px] sm:text-[24px] md:text-[28px] lg:text-[30px] font-[500] text-[#242424] leading-[130%] tracking-normal">
+              <h3 className="mt-4 text-[30px] md:text-[28px] lg:text-[30px] font-[500] text-[#242424] leading-[130%] tracking-normal">
                 Optimizing Conversions: A Tech Startup’s Leap
               </h3>
             </div>

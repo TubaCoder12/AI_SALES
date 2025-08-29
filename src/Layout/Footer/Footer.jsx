@@ -16,7 +16,7 @@ export default function Footer() {
               <div className="max-w-[360px] shrink-0">
                 <div className="flex items-center gap-2">
                   <img src={logo} alt="logo" className="w-[37px] h-[40px]" />
-                  <span className="font-[400] text-2xl leading-[130%] text-[#000000] font-pragati">
+                  <span className="font-[400] text-3xl leading-[130%] text-[#000000] font-pragati">
                     AI SALES
                   </span>
                 </div>
@@ -48,7 +48,7 @@ export default function Footer() {
               <div className="flex flex-row gap-10 sm:gap-16 lg:gap-[60px]">
                 {/* Company */}
                 <div className="min-w-[140px]">
-                  <h3 className="text-sm font-semibold mb-3">Company</h3>
+                  <h3 className="text-lg font-semibold mb-3">Company</h3>
                   <ul className="space-y-3 text-base font-normal text-[#595959] leading-[130%]">
                     <li>
                       <a href="#">Home</a>
@@ -67,7 +67,7 @@ export default function Footer() {
 
                 {/* Legal */}
                 <div className="min-w-[140px]">
-                  <h3 className="text-sm font-semibold mb-3">Legal</h3>
+                  <h3 className="text-lg font-semibold mb-3">Legal</h3>
                   <ul className="space-y-3 text-base font-normal text-[#595959] leading-[130%]">
                     <li>
                       <a href="#">Privacy</a>

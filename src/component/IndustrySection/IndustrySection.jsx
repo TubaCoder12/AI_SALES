@@ -4,12 +4,12 @@ import CardContent from "../CardContent/CardContent";
 export default function IndustrySection() {
   return (
     <div className="lg:max-w-[1440px] w-full mx-auto">
-      <div className="flex flex-col items-center justify-center bg-white lg:py-[80px] lg:px-[120px] md:py-[40px] md:px-[60px] py-[40px] px-[20px]">
-        <div className="bg-orange-100 rounded-3xl text-center w-full">
+      <div className="flex flex-col items-center justify-center bg-[#FEFAF6] lg:py-[80px] lg:px-[120px] md:py-[40px] md:px-[60px] py-[40px] px-[20px]">
+        <div className="bg-[#FAEBDC] rounded-3xl text-center w-full">
           {/* Heading */}
           <div className="py-[40px] lg:py-[80px] px-[20px] lg:px-[120px]">
             <CardContent label="INDUSTRIES WE SERVE" align="center" />
-            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-[500] text-[#242424] mt-4 leading-[120%] tracking-[-0.5px] max-w-4xl mx-auto">
+            <h2 className="text-[20px] md:text-[36px] lg:text-[44px] font-[500] text-[#242424] mt-4 leading-[120%] tracking-[-0.5px] max-w-xl mx-auto">
               Industry-specific expertise to drive your success
             </h2>
           </div>

@@ -16,7 +16,7 @@ const ReviewProduct = () => {
         </h2>
 
         {/* Video Preview Section */}
-        <div className="relative rounded-[30px] overflow-hidden  aspect-video w-full max-w-[1200px] mt-[60px] border-[16px] border-[#FAEBDC] shadow-[0px_4px_100px_0px_rgba(254,96,55,0.24)] ">
+        <div className="relative rounded-[30px] overflow-hidden  aspect-video w-full max-w-[1200px] mt-[12px] md:mt-[60px] border-[16px] border-[#FAEBDC] shadow-[0px_4px_100px_0px_rgba(254,96,55,0.24)] ">
           {/* Thumbnail image instead of video */}
           <img
             src={sampleVideo}

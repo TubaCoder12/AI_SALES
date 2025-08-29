@@ -22,8 +22,9 @@ const Home = () => {
       <ReviewProduct />
       <TransformingBussiness />
       <IndustrySection />
-      <CaseStudies />
+
       <TestimonialsSlider />
+      <CaseStudies />
       <CTASection />
     </>
   );

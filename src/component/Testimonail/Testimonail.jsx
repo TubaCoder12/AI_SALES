@@ -153,14 +153,14 @@ export default function TestimonialsSlider() {
         <div className=" bg-[#FEFAF6] py-[40px] px-[20px] md:py-[60px] md:px-[80px] lg:py-[80px] lg:px-[120px] ">
           <CardContent label="testimonials" align="center" />
           <h2
-            className={`text-3xl md:text-[40px] mt-[16px] font-medium  mx-auto text-black max-w-xl text-center leading-[52.8px] tracking-[0px] `}
+            className={`text-3xl md:text-[40px] mt-[16px] font-medium  mx-auto text-black max-w-[312px] md:max-w-md text-center leading-[52.8px] tracking-[0px] `}
           >
-            Trusted by high-growth startups across industries
+            What our users say abouts their experience
           </h2>
         </div>
         <div className="relative  lg:px-[120px] px-[20px] md:px-[80px]  bg-[#FEFAF6]">
           {/* Top Gradient Overlay */}
-          <div className="absolute top-0 left-0 w-full h-[146px] bg-gradient-to-b from-[#FEFAF6] to-transparent z-10 pointer-events-none" />
+          <div className="absolute top-0  xxl:-top-[5px]  left-0 w-full h-[149px] bg-gradient-to-b from-[#FEFAF6] to-transparent z-10 pointer-events-none" />
 
           <div className="block lg:hidden">
             <Swiper
@@ -179,13 +179,15 @@ export default function TestimonialsSlider() {
                         className="w-[48px] h-[48px] rounded-full object-cover border-4 border-[#FAEBDC]"
                       />
                       <div>
-                        <div className="font-semibold text-[#252B37]">
+                        <div className="font-semibold text-[#252B37] text-base">
                           {t.name}
                         </div>
-                        <div className="text-[#A4A7AE] text-sm">{t.email}</div>
+                        <div className="text-[#A4A7AE] text-base">
+                          {t.email}
+                        </div>
                       </div>
                     </div>
-                    <p className="text-[#595959] mt-4 text-sm leading-[130%] text-left flex-grow">
+                    <p className="text-[#595959] mt-4 text-[14px] leading-[130%] text-left flex-grow">
                       {t.text}
                     </p>
                   </div>
@@ -239,7 +241,7 @@ export default function TestimonialsSlider() {
           </div>
 
           {/* Bottom Gradient Overlay */}
-          <div className="absolute bottom-0 left-0 w-full h-[149px] bg-gradient-to-t from-[#FEFAF6] to-transparent z-10 pointer-events-none" />
+          <div className="absolute bottom-0 xxl:bottom-[41px] left-0 w-full h-[149px] bg-gradient-to-t from-[#FEFAF6] to-transparent z-10 pointer-events-none" />
         </div>
       </div>
     </>
