@@ -1,6 +1,6 @@
 import CardContent from "../CardContent/CardContent";
-import img1 from "../../assets/images/CaseStudy1.png";
-import img2 from "../../assets/images/CaseStudy2.png";
+import img1 from "../../assets/images/caseStudy1.png";
+import img2 from "../../assets/images/caseStudy2.png";
 
 export default function CaseStudies() {
   return (
