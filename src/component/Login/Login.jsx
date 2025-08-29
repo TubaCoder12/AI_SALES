@@ -92,12 +92,12 @@ export default function Login() {
               />
               Remember me
             </label>
-            <a
-              href="#"
+            <Link
+              to="/forget-password"
               className=" underline text-sm  font-[500] text-[#333333] leading-[20.3px] tracking-normal"
             >
               Forgot password?
-            </a>
+            </Link>
           </div>
 
           <button
