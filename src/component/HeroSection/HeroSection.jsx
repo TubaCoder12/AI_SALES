@@ -141,7 +141,7 @@ const HeroSection = () => {
             <div
               key={i}
               ref={(el) => (imagesRef.current[i] = el)}
-              className={`relative flex-shrink-0 w-[280px] h-[280px] lg:w-[230px] lg:h-[230px] md:w-[170px] md:h-[170px] xxl:w-[335px] xxl:h-[335px] overflow-hidden group ${img.shape}`}
+              className={`relative flex-shrink-0 w-[280px] xll:w-[280px] xll:h-[280px] h-[280px] lg:w-[230px] lg:h-[230px] md:w-[170px] md:h-[170px]  xxl:w-[335px] xxl:h-[335px] overflow-hidden group ${img.shape}`}
             >
               <img
                 src={img.src}

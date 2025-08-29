@@ -9,6 +9,7 @@ export default {
       },
       screens: {
         xxl: "1440px",
+        xll: "1280px",
       },
     },
   },

@@ -10,12 +10,10 @@ export default function IndustrySection() {
   const headingRef = useRef(null);
   const spansRefs = useRef([]);
 
-  // Clear refs array on each render to avoid duplicates
   spansRefs.current = [];
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Animate heading separately for better control
       gsap.from(headingRef.current, {
         scrollTrigger: {
           trigger: sectionRef.current,
@@ -28,7 +26,6 @@ export default function IndustrySection() {
         ease: "power3.out",
       });
 
-      // Animate each span with a slight stagger for a more dynamic effect
       gsap.from(spansRefs.current, {
         scrollTrigger: {
           trigger: sectionRef.current,
@@ -38,9 +35,9 @@ export default function IndustrySection() {
         opacity: 0,
         y: 30,
         duration: 3,
-        stagger: 0.2,
+        stagger: 0.1,
         ease: "power2.out",
-        delay: 2,
+        delay: 1,
       });
     }, sectionRef);
 
@@ -72,13 +69,13 @@ export default function IndustrySection() {
           <div className="flex justify-center gap-[1vw]  ">
             <span
               ref={addToRefs}
-              className="bg-[#FFBAB9] text-white px-[2vw] py-[0.8vw] md:px-6 md:py-3 rounded-full text-[2vw] md:text-base font-medium lg:px-[14px] whitespace-nowrap"
+              className="bg-[#FFBAB9] text-white px-[2vw] py-[0.8vw]     xll:px-[21px]   md:px-6 md:py-3 rounded-full text-[2vw] md:text-base font-medium lg:px-[14px] whitespace-nowrap"
             >
               Nonprofit
             </span>
             <span
               ref={addToRefs}
-              className="bg-[#FFD37D] text-white px-[2vw] py-[0.8vw] md:px-6 md:py-3 rounded-full text-[2vw] md:text-base font-medium lg:px-[14px] whitespace-nowrap ml-20 mr-16"
+              className="bg-[#FFD37D] text-white px-[2vw] py-[0.8vw]      xll:px-[21px]   md:px-6 md:py-3 rounded-full text-[2vw] md:text-base font-medium lg:px-[14px] whitespace-nowrap ml-20 mr-16"
             >
               Tech Company
             </span>
@@ -88,38 +85,38 @@ export default function IndustrySection() {
           <div className="font-satoshi flex justify-center ">
             <span
               ref={addToRefs}
-              className="bg-[#FFA37C] text-white px-[1.3vw] py-[1vw] lg:px-[14px] md:py-3 xxl:!px-[40px] rounded-full text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap ml-2"
+              className="bg-[#FFA37C] text-white px-[1.3vw] py-[1vw] lg:px-[14px]     xll:px-[21px]   md:py-3 xxl:!px-[40px] rounded-full text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap ml-2"
             >
               Consulting Firm
             </span>
 
             <span
               ref={addToRefs}
-              className="bg-[#3758D3] text-white px-[1.3vw] py-[1vw] lg:px-[14px] md:py-3 rounded-full xxl:!px-[40px]  text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap"
+              className="bg-[#3758D3] text-white px-[1.3vw] py-[1vw] lg:px-[14px]     xll:px-[21px]    md:py-3 rounded-full xxl:!px-[40px]  text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap"
             >
               Corporate
             </span>
             <span
               ref={addToRefs}
-              className="bg-[#76C6B3] text-white px-[1.3vw] py-[1vw] lg:px-[14px] md:py-3 rounded-full xxl:!px-[40px]  text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap"
+              className="bg-[#76C6B3] text-white px-[1.3vw] py-[1vw] lg:px-[14px]      xll:px-[21px]   md:py-3 rounded-full xxl:!px-[40px]  text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap"
             >
               Small Business
             </span>
             <span
               ref={addToRefs}
-              className="bg-[#70A2E1] text-white px-[1.3vw] py-[1vw] lg:px-[14px] md:py-3 xxl:!px-[40px]  rounded-full text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap"
+              className="bg-[#70A2E1] text-white px-[1.3vw] py-[1vw] lg:px-[14px] md:py-3      xll:px-[21px]   xxl:!px-[40px]  rounded-full text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap"
             >
               E-commerce Store
             </span>
             <span
               ref={addToRefs}
-              className="bg-[#3861F9] text-white px-[1.3vw] py-[1vw] lg:px-[14px] md:py-3 xxl:!px-[40px]   rounded-full text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap"
+              className="bg-[#3861F9] text-white px-[1.3vw] py-[1vw] lg:px-[14px] md:py-3 xxl:!px-[40px]      xll:px-[21px]    rounded-full text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap"
             >
               Startup
             </span>
             <span
               ref={addToRefs}
-              className="bg-[#FE6037] text-white px-[1.3vw] py-[1vw] lg:px-[14px] md:py-3 xxl:!px-[40px]  rounded-full text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap rotate-[21deg] relative -top-[3vw] -left-[2.5vw] lg:-top-6 md:-left-7 lg:-left-[12px] xxl:-top-[2.25rem]"
+              className="bg-[#FE6037] text-white px-[1.3vw] py-[1vw] lg:px-[14px] md:py-3 xxl:!px-[40px]      xll:px-[21px]   rounded-full text-[1.8vw] lg:text-base font-medium lg:px-[14px] whitespace-nowrap rotate-[21deg] relative -top-[3vw] -left-[2.5vw] lg:-top-6 md:-left-7 lg:-left-[12px] xxl:-top-[2.25rem]"
             >
               Marketing Agency
             </span>
