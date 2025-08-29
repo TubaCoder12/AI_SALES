@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import img from "../../assets/images/FacingImg.png";
 import img2 from "../../assets/images/FacingImg2.png";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function FacingChalenges() {
   const features = [
@@ -20,8 +21,19 @@ export default function FacingChalenges() {
   const mainImgRef = useRef(null);
   const floatingImgRef = useRef(null);
 
+  gsap.registerPlugin(ScrollTrigger);
+
   useEffect(() => {
-    const tl = gsap.timeline({ defaults: { ease: "power3.out", duration: 1 } });
+    const tl = gsap.timeline({
+      defaults: { ease: "power3.out", duration: 1 },
+      scrollTrigger: {
+        trigger: sectionRef.current, // jab section viewport me aaye
+        start: "top 80%", // jab section ka top 80% viewport me aaye
+        toggleActions: "play none none none",
+        // play = jab aaye animation chale
+        // none = dobara scroll back pe repeat na ho
+      },
+    });
 
     tl.fromTo(taglineRef.current, { opacity: 0, x: -40 }, { opacity: 1, x: 0 })
       .fromTo(
@@ -127,7 +139,7 @@ export default function FacingChalenges() {
           />
           <div
             ref={mainImgRef}
-            className="absolute inset-0 z-10"
+            className="absolute inset-0 z-10 rounded-xl"
             style={{
               background:
                 "linear-gradient(to bottom, rgba(254, 96, 55, 0), rgb(254, 96, 55 ,0.3) 100%)",
@@ -142,7 +154,7 @@ export default function FacingChalenges() {
             md:w-[200px] md:h-[200px] 
             xxl:w-[240px] xxl:h-[256px] 
             top-[-93px] md:top-[-92px] 
-            lg:top-[-81px]
+            lg:top-[-65px]
             left-[143px] md:left-[154px] 
             lg:left-[225px] xl:left-[340px] xxl:left-[368px]
             xxl:top-[-53px]"
