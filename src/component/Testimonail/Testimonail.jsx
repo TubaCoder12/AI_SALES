@@ -166,6 +166,8 @@ export default function TestimonialsSlider() {
               slidesPerView={4}
               spaceBetween={12}
               className="h-[950px]"
+              touchReleaseOnEdges={true}
+              mousewheel={false}
             >
               {testimonials.map((t, idx) => (
                 <SwiperSlide key={`mobile-${idx}`} className="h-auto">
