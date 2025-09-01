@@ -67,7 +67,11 @@ export default function CaseStudies() {
   };
 
   return (
-    <div className="lg:max-w-[1440px] w-full mx-auto" ref={sectionRef}>
+    <div
+      id="case-study"
+      className="lg:max-w-[1440px] w-full mx-auto"
+      ref={sectionRef}
+    >
       <section className="bg-[#fff7f5] lg:py-[80px] lg:px-[120px]  md:py-[40px] md:px-[80px] py-[40px] px-[20px]">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row lg:items-end md:justify-between gap-6">

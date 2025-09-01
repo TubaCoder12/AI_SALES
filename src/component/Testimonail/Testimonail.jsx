@@ -139,13 +139,11 @@ const testimonials = [
   },
 ];
 
-// ✅ Slide Groups: unique groups of 3 cards each
 const slideGroups = [];
 for (let i = 0; i < testimonials.length; i += 3) {
   slideGroups.push(testimonials.slice(i, i + 3));
 }
 
-// ✅ Main Component
 export default function TestimonialsSlider() {
   return (
     <>

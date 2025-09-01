@@ -58,7 +58,7 @@ const Navbar = () => {
 
       {/* Desktop Links */}
       <div className="hidden md:flex items-center space-x-8 font-[16px] leading-[130%]">
-        {["Challenges", "How it works", "Use cases", "Pricing"].map(
+        {["Challenges", "How it works", "Use cases", "case study"].map(
           (text, i) => (
             <a
               key={i}
@@ -91,8 +91,8 @@ const Navbar = () => {
           <a href="#use-cases" onClick={() => setOpen(false)}>
             Use cases
           </a>
-          <a href="#pricing" onClick={() => setOpen(false)}>
-            Pricing
+          <a href="#useStudy" onClick={() => setOpen(false)}>
+            use study
           </a>
         </div>
       )}
